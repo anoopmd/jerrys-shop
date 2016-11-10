@@ -1,0 +1,9 @@
+{
+  "node": {
+    "port": 5000
+  },
+  "mongo": {
+    "port": 27017,
+    "connectionString": "mongodb://localhost/test"
+  }
+}

@@ -2,8 +2,9 @@
   "name": "jerrys-shop",
   "version": "0.0.1",
   "description": "Mean Stack Simple Ecommerce App",
-  "main": "index.js",
+  "main": "server",
   "scripts": {
+    "start": "node server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -11,5 +12,12 @@
     "ecommerce"
   ],
   "author": "Anoop M D",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "config": "^1.24.0",
+    "express": "^4.14.0",
+    "underscore": "^1.8.3",
+    "winston": "^2.3.0"
+  }
 }
