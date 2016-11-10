@@ -1,0 +1,8 @@
+{
+  "name": "jerrys-shop",
+  "dependencies": {
+    "angular": "~1.5.x",
+    "angular-bootstrap": "^2.1.3",
+    "bootstrap": "^3.3.7"
+  }
+}
