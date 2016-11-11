@@ -4,6 +4,6 @@
   },
   "mongo": {
     "port": 27017,
-    "connectionString": "mongodb://localhost/test"
+    "connectionString": "mongodb://localhost/mongoProducts"
   }
 }
