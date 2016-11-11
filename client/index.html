@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="ng-app" ng-app="app" ng-controller="AppCtrl">
+<html id="ng-app" ng-app="app">
 <head>
   <title>Jerrys Shop</title>
 
@@ -21,8 +21,8 @@
 
       <!-- menu bar -->
       <ul class="nav navbar-nav">
-        <li class="active"><a href='#/home'>Films</a></li>
-        <li><a href='#/home'>Audio Albums</a></li>
+        <li class="active"><a href='#/films'>Films</a></li>
+        <li><a href='#/albums'>Audio Albums</a></li>
       </ul>
 
       <!-- search bar -->
@@ -36,17 +36,16 @@
       </form>
 
     </div>
+
+
   </div>
 </nav>
 
-<div class="container-fluid lg-main-container">
+<div class="container-fluid" style="margin-top:60px;">
   <div ui-view="main">
     <div class="row">
       <div class="col-md-12">
-        <div class="app-splash">
-          <i class="fa fa-building icon-xxl"></i>
-          <h3>Loading...</h3>
-        </div>
+        <div ng-view></div>
       </div>
     </div>
   </div>

@@ -46,6 +46,7 @@ module.exports = function (grunt) {
       vendorjs:{
         src: [
           'bower_components/angular/angular.min.js',
+          'bower_components/angular-route/angular-route.min.js',
           'bower_components/lodash/dist/lodash.min.js',
           'bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js'
         ],
