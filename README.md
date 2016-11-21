@@ -1,6 +1,6 @@
-# Jerry's Shop
+## Jerry's Shop
 
-## Start Server
+### Start Server
 ```bash
 npm start
 ```

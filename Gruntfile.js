@@ -10,7 +10,7 @@ module.exports = function (grunt) {
   grunt.registerTask('build:html', ['ngtemplates']);
   grunt.registerTask('build', ['clean:public', 'jshint', 'concat:index', 'build:css', 'build:js', 'build:html', 'vendor']);
 
-   // Project configuration.
+  // Project configuration.
   grunt.initConfig({
     // Metadata.
     pkg: grunt.file.readJSON('package.json'),
@@ -24,6 +24,9 @@ module.exports = function (grunt) {
       js: ['client/**/*.js'],
       html: ['client/app/**/*.html'],
       scss: ['client/**/*.scss']
+    },
+    server : {
+      js: ['server/**/*.js']
     },
     clean:{
       public : ["public"]
@@ -60,7 +63,7 @@ module.exports = function (grunt) {
       }
     },
     jshint:{
-      files:['gruntFile.js', '<%= src.js %>'],
+      files:['gruntFile.js', '<%= src.js %>', '<%= server.js %>'],
       options:{
         globalstrict: true,
         curly:true,
@@ -73,6 +76,7 @@ module.exports = function (grunt) {
         boss:true,
         eqnull:true,
         globals:{
+          "require"  : true,
           "angular"  : true,
           "console"  : true,
           "document" : true
